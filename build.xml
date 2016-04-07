@@ -57,7 +57,7 @@
 
     
 
-    <target name="junit" depends="compile">
+    <target name="test" depends="compile">
 
        <junit printsummary="true">
         <classpath >
