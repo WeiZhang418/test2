@@ -30,7 +30,9 @@
     
 
     <target name="init">
+       <delete dir="${run.classpath}"/>
 
+       <mkdir dir="${run.classpath}"/>
 
        <delete dir="${test.report}"/>
 
@@ -56,9 +58,12 @@
 
     </target>
 
-    
+    <target name="test" depends="junit">
+ 
 
-    <target name="test" depends="compile">
+    </target>
+
+    <target name="junit" depends="compile">
 
        <junit printsummary="true">
         <classpath >
