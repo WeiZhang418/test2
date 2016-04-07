@@ -1,5 +1,6 @@
 package test2;
 
+
 import static org.junit.Assert.*;
 
 import org.junit.After;
@@ -11,6 +12,7 @@ public class CalculatorTest {
 	private static Calculator calculator=new Calculator();
 	@Before
 	public void setUp() throws Exception {
+
 	}
 
 	@After

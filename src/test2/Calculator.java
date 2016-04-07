@@ -3,7 +3,7 @@ package test2;
 
 
 	public class Calculator {
-	    private static int result;    //静态变量，用于存储运行结果
+	    private static int result;    
 	    public void add(int n)
 	    {
 	        result=result+n;
@@ -11,12 +11,12 @@ package test2;
 	    
 	    public void substract(int n)
 	    {
-	        result=result-1;        //Bug：正确的应该是result=result-n;
+	        result=result-1;        //Bug
 	    }
 	    
 	    public void multiply(int n)
 	    {
-	        //此方法尚未写好
+	        //not implemented.
 	    }
 	    
 	    public void divide(int n)
@@ -31,12 +31,12 @@ package test2;
 	    
 	    public void squareRoot(int n)
 	    {
-	        for(;;);    //Bug:死循环
+	        for(;;);    //Bug:dead lock
 	    }
 	    
 	    public void clear()
 	    {
-	        result=0;  //将结果清零
+	        result=0;  
 	    }
 	    
 	    public int getResult()
