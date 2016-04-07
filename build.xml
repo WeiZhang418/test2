@@ -30,9 +30,7 @@
     
 
     <target name="init">
-       <delete dir="${run.classpath}"/>
 
-       <mkdir dir="${run.classpath}"/>
 
        <delete dir="${test.report}"/>
 
